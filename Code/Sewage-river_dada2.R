@@ -347,7 +347,6 @@ chloro_ASVs <- subset(taxa_table.df, Order == "Chloroplast")
 mito_ASVs <- subset(taxa_table.df, Family == "Mitochondria")
 
 
-
 # combine them
 euk_ASVs$Source <- "Eukaryota"
 chloro_ASVs$Source <- "Chloroplasts"
