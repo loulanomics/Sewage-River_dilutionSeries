@@ -140,7 +140,7 @@ for(i in sample_names) {
   dadaF <- dada(derepF, err = errorF, multithread = TRUE)
   derepR <- derepFastq(filteredRs[[i]])
   dadaR <- dada(derepR, err = errorR, multithread = TRUE)
-  Merger <- mergePairs(dadaF, derepF, dadaR, derepR)
+  merger <- mergePairs(dadaF, derepF, dadaR, derepR)
   mergers[[i]] <- merger
 }
 
